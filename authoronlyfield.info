@@ -1,0 +1,7 @@
+name = Author-Only Fields
+description = Specify fields to be editable by author only.
+version = 7.x-1.1
+package = Fields
+configure = admin/settings/authoronlyfield
+core = 7.x
+php = 5.2
