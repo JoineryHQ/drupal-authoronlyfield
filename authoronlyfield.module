@@ -6,6 +6,10 @@
 function authoronlyfield_form_node_form_alter(&$form, $form_state, $form_id) {
   global $user;
   $uid = $user->uid;
+  if (!$uid) {
+    // Take no action for anonymous user.
+    return;
+  }
   $node_uid = $form['uid']['#value'];
   if ($uid != $node_uid) {
     // strip any author-only field instances on this node.
