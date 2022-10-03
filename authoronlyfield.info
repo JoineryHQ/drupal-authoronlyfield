@@ -2,5 +2,5 @@ name = Author-Only Fields
 description = Specify fields to be editable by author only.
 version = 7.x-1.0
 package = Fields
-configure = admin/settings/authoronlyfield
+configure = admin/structure/authoronlyfield
 core = 7.x
